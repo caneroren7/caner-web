@@ -7,6 +7,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-transform: lowercase;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 html,body {
@@ -40,4 +49,6 @@ section {
 .wrapper {
   width: 100%;
   max-width: 648px;
+  margin-left: auto;
+  margin-right: auto;
 }

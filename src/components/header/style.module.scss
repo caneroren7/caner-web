@@ -1,4 +1,35 @@
 .header {
   flex: 0 0 auto;
-  padding: 40px 0;
+  padding: 48px 0;
+}
+
+.block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logo {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 159px;
+  height: 30px;
+}
+
+.menu ul {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  li {
+    display: inline-flex;
+    align-items: center;
+  }
+  a {
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--base-black);
+  }
 }
