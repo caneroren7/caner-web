@@ -1,4 +1,13 @@
-import './globals.css'
+import Footer from "@/components/footer"
+import Header from "@/components/header"
+import { Lato } from "@next/font/google"
+import "./globals.scss"
+
+const lato = Lato({
+  subsets: ["latin"],
+  display: "swap",
+  weight: "400"
+})
 
 export default function RootLayout({
   children,
@@ -6,13 +15,15 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      {/*
-        <head /> will contain the components returned by the nearest parent
-        head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
-      */}
+    <html lang="en" className={lato.className}>
       <head />
-      <body>{children}</body>
+      <body>
+        <Header />
+        <main className="main container">
+          {children}
+        </main>
+        <Footer />
+      </body>
     </html>
   )
 }
