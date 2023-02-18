@@ -1,0 +1,41 @@
+.skill-card {
+  width: 100%;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  margin-bottom: 4px;
+}
+
+.title {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  margin-bottom: 18px;
+}
+.subTitle {
+  font-size: 12px;
+  line-height: 14px;
+  color: var(--base-color);
+}
+
+.desc {
+  max-width: 350px;
+  font-size: 14px;
+  line-height: 26px;
+  margin-bottom: 18px;
+}
+
+.detail {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 24px;
+  color: var(--base-black);
+}

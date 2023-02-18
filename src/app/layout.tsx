@@ -1,12 +1,12 @@
 import Footer from "@/components/footer"
 import Header from "@/components/header"
-import { Lato } from "@next/font/google"
+import { Noto_Sans } from "@next/font/google"
 import "./globals.scss"
 
-const lato = Lato({
+const notoSans = Noto_Sans({
   subsets: ["latin"],
   display: "swap",
-  weight: "400"
+  weight: ["400", "500", "600", "700"]
 })
 
 export default function RootLayout({
@@ -15,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={lato.className}>
+    <html lang="en" className={notoSans.className}>
       <head />
       <body>
         <Header />
